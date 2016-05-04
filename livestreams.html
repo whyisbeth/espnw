@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>espnW Summit | Livestreams</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	
+	<!--Icons-->
+	<link rel="apple-touch-icon" href=" " />
+	<link rel="apple-touch-icon" sizes="72x72" href=" " />
+	<link rel="apple-touch-icon" sizes="114x114" href=" " />
+	<link rel="apple-touch-startup-image" href=" " />
+	
+	<!--Styles-->
+	<link rel="stylesheet" href="styles/jquery.mobile.structure-1.1.0.min.css" />
+	<link rel="stylesheet" href="styles/espnwsummit2.css" />
+	<link type="text/css" rel="stylesheet" media="screen and (max-device-width: 480px)" href="styles/mobile.css" />
+	<link type="text/css" rel="stylesheet" media="screen and (min-device-width: 480px) and (max-device-width: 800px)" href="styles/tablet.css" />
+	<link type="text/css" rel="stylesheet" media="screen and (min-device-width: 600px) and (max-device-width: 1024px)" href="styles/tablet.css" />
+	<link type="text/css" rel="stylesheet" media="screen and (min-device-width: 768px) and (max-device-width: 1024px)" href="styles/tablet.css" />
+	<link type="text/css" rel='stylesheet' media="screen and (min-device-width: 1024px)" href="styles/styles.css" />
+	
+	<!--jQuery-->
+	<script src="js/jquery-1.7.2.min.js"></script>
+	<script src="js/jquery.mobile-1.1.0.min.js"></script>
+	<script src="js/fitvids/jquery.fitvids.js"></script>
+	
+</head>
+<body>
+<script type="text/javascript">       
+   $(document).live("pageinit", function() {
+		$(".content").fitVids({ customSelector: "iframe[src^='http://cdn.livestream.com']"});    
+	});
+	$(window).bind('resize', function() { location.reload(); });
+</script>
+    <div data-role="page" id="livestreams-page">
+        <div class="wrapper" data-role="content">
+        	<div data-role="header" data-position="fixed" id="page-header" data-theme="e">
+       			<a href="index.html" data-role="button" data-icon="home" class="back-btn">Home</a>
+				<a href="#" onclick="location.reload(true)" data-role="button" data-icon="refresh" data-iconpos="notext" class="settings-btn"></a>
+       		</div><!-- /#page-header -->
+        	<div class="header">
+        		<img src="img/header-new.png" />
+       		</div><!-- /.header -->
+       		<div class="mobile-header">
+       			<img src="img/iphoneheader.png" />
+       		</div>
+        	<div class="content">
+        		<ul data-role="listview" data-theme="e" data-divider-theme="a" id="livestreams-list">
+        			<li data-role="list-divider">View Livestream Sessions</li>
+        			<li>
+        				<a href="livestreams/tues1245pm.html">
+        					<p>Tuesday, Oct. 2, 12:45pm MST<br/>
+							<span class="livestream-title">"A Global Perspective on Women's Sports"</span><br/>
+							Speakers: Stacey Allaster, Rahul Brahmbhatt, and Shamila Kohestani</p>
+						</a>
+        			</li>
+        			<li>
+        				<a href="livestreams/tues645pm.html">
+        					<p>Tuesday, Oct. 2, 6:45pm MST<br/>
+	        				<span class="livestream-title">"The WNBA: a Story of Commitment, Passion, and Innovation"</span><br/>
+							Speakers: Adam Silver and John Skipper, hosted by Hannah Storm</p>
+						</a>
+	        		</li>
+        			<li>
+        				<a href="livestreams/tues815pm.html">
+        					<p>Tuesday, Oct. 2, 8:15pm MST<br/>
+							<span class="livestream-title">"World-Class Athletes: the Ultimate Multi-Taskers"</span><br/>
+							Speakers: Swin Cash, Carmelita Jeter, Kristine Lilly, and Gabrielle Reece, hosted by Jemele Hill</p>
+						</a>
+        			</li>
+        			<li>
+        				<a href="livestreams/wed800am.html">
+        					<p>Wednesday, Oct. 3, 8:00am MST<br/>
+							<span class="livestream-title">"How Women are Using Social Media to Innovate"</span><br/>
+							Speaker: Amy Jo Martin</p>
+						</a>
+        			</li>
+        			<li>
+        				<a href="livestreams/wed1230pm1.html">
+        					<p>Wednesday, Oct. 3, 12:30pm MST<br/>
+							<span class="livestream-title">"An Olympic Gold Session"</span><br/>
+							Speaker: Kerri Walsh<br/>
+							<span class="livestream-title">"Voices of the Future"</span><br/>
+							Speakers: Latanna Stone, Jessica Long, Aly Raisman, and Sloane Stephens, moderated by Julie Foudy</p>
+						</a>
+        			</li>
+        			<li>
+        				<a href="livestreams/wed1230pm2.html">
+        					<p>Wednesday, Oct. 3, 12:30pm<br/>
+							<span class="livestream-title">"Smart Power: The Future of Women and Sports is in our Hands"</span><br/>
+							Speaker: Deputy Assistant Secretary Lee Satterfield</p>
+						</a>
+					</li>
+						<!--<li data-role="list-divider">View Past Sessions On Demand</li>
+						<li>
+        				<a href="livestreams/mon630pm.html">
+        					<p>Monday, Oct. 1, 6:30pm MST<br/>
+							<span class="livestream-title">"Join the rEVEolution"</span><br/>
+							Speaker: Faith Popcorn</p>
+						</a>
+        			</li>-->
+        			
+        			
+        		</ul>
+        	</div><!-- /.content -->	
+        </div><!-- /.wrapper -->
+	</div><!-- /#sessions-page -->
+</body>
+</html>

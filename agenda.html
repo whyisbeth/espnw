@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>espnW Summit | Agenda</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	
+	<!--Icons-->
+	<link rel="apple-touch-icon" href=" " />
+	<link rel="apple-touch-icon" sizes="72x72" href=" " />
+	<link rel="apple-touch-icon" sizes="114x114" href=" " />
+	<link rel="apple-touch-startup-image" href=" " />
+	
+	<!--Styles-->
+	<link rel="stylesheet" href="styles/jquery.mobile.structure-1.1.0.min.css" />
+	<link rel="stylesheet" href="styles/espnwsummit2.css" />
+	<link type="text/css" rel="stylesheet" media="screen and (max-device-width: 480px)" href="styles/mobile.css" />
+	<link type="text/css" rel="stylesheet" media="screen and (min-device-width: 480px) and (max-device-width: 800px)" href="styles/tablet.css" />
+	<link type="text/css" rel="stylesheet" media="screen and (min-device-width: 600px) and (max-device-width: 1024px)" href="styles/tablet.css" />
+	<link type="text/css" rel="stylesheet" media="screen and (min-device-width: 768px) and (max-device-width: 1024px)" href="styles/tablet.css" />
+	<link type="text/css" rel='stylesheet' media="screen and (min-device-width: 1024px)" href="styles/styles.css" />
+		
+	<!--jQuery-->
+	<script src="js/jquery-1.7.2.min.js"></script>
+	<script src="js/jquery.mobile-1.1.0.min.js"></script>
+
+</head>
+<body>
+    <div data-role="page" id="agenda-page">
+        <div class="wrapper" data-role="content">
+        <script type="text/javascript">
+		$(document).bind("pagecreate", function() {
+			  $('#dayone-btn').click(function() {
+				  $('html, body').animate({
+				    scrollTop: $('#dayone').offset().top - 46
+				  });
+				});
+				$('#daytwo-btn').click(function() {
+				  $('html, body').animate({
+				    scrollTop: $('#daytwo').offset().top - 46
+				  });
+				});
+				$('#daythree-btn').click(function() {
+				  $('html, body').animate({
+				    scrollTop: $('#daythree').offset().top -46
+				  });
+				});
+		});
+		</script>
+        	<div data-role="header" data-position="fixed" id="page-header" data-theme="e">
+       			<a href="index.html" data-role="button" data-icon="home" class="back-btn">Home</a>
+				<a href="#" onclick="location.reload(true)" data-role="button" data-icon="refresh" data-iconpos="notext" class="settings-btn"></a>
+       		</div><!-- /#page-header -->
+        	<div class="header">
+        		<img src="img/header-new.png" />
+       		</div><!-- /.header -->
+       		<div class="mobile-header">
+       			<img src="img/iphoneheader.png" />
+       		</div>
+        	<div class="content">
+        		<div id="day-btns">
+	        		<a href="#dayone" data-role="button" class="day-btn" id="dayone-btn">Day 1</a>
+	        		<a href="#daytwo" data-theme="a" data-role="button" class="day-btn" id="daytwo-btn">Day 2</a>
+	        		<a href="#daythree" data-role="button" class="day-btn" id="daythree-btn">Day 3</a>
+        		</div>
+        		<ul id="agenda-list" data-role="listview" data-theme="d" data-divider-theme="a" data-filter="false" data-filter-theme="a" data-filter-placeholder="Search the agenda...">
+        			<li data-role="list-divider" id="dayone">Day 1 - Monday, October 1</li>
+        			<!--<li class="session">
+	        			<h3>time</h3>
+	        			<p>description</p>
+	        			<p>speakers</p>
+	        			<p>Location:</p>
+	        			<h4><a href="maps/map.html" data-rel="dialog" data-role="button" data-icon="search" data-iconpos="notext"></a></h4>
+	        			 
+        			</li>-->
+        			<!--<li class="session">
+	        			<h3>11:00am - 1:00pm</h3>
+	        			<h4>Arrivals for espnW Advisory Panel members and Founding Partners</h4>
+        			</li>
+        			<li class="session">
+	        			<h3>11:00am - 11:00pm</h3>
+	        			<h4>Hospitality Suite open for gift bag pick-up</h4>
+	        			<p>Location: <a href="maps/map.html" data-rel="dialog">Club Lounge</a></p>
+        			</li>
+        			<li class="session">
+	        			<h3>1:00pm - 2:30pm</h3>
+	        			<h4>espnW Advisory Panel lunch meeting</h4>
+	        			<p>Location: <a href="maps/map.html" data-rel="dialog">CORE Kitchen</a></p> 
+        			</li>
+        			<li class="session">
+	        			<h3>2:30pm - 3:30pm</h3>
+	        			<h4>Advisory Panel and Partners meet-and-greet</h4>
+	        			<p>with ESPN's <a href="speakers/mckendry.html" data-rel="dialog">Chris McKendry</a></p>
+	        			<p>Location: <a href="maps/map.html" data-rel="dialog">CORE Kitchen</a></p>
+        			</li>-->
+        			<li class="session">
+	        			<h3>5:00pm</h3>
+	        			<h4>Welcome Reception</h4>
+	        			<p>Location: <a href="maps/ritzballroom.html" data-rel="dialog"> Ballroom Lobby / Patio Area</a></p>
+        			</li>
+        			<li class="session">
+	        			<h3>5:30pm - 6:30pm</h3>
+	        			<h4>"A Look at the espnW Business"</h4>
+	        			<p>with <a href="speakers/steele.html"  data-rel="dialog">Sage Steele</a>, <a href="speakers/gentile.html"  data-rel="dialog">Laura Gentile</a>, and <a href="speakers/driessen.html"  data-rel="dialog">Christine Driessen</a></p>
+	        			<p>Location: <a href="maps/ritzballroom.html" data-rel="dialog">Ritz Ballroom</a></p>
+        			</li>
+        			<li class="session">
+	        			<h3>6:30pm - 7:30pm</h3>
+	        			<h4>"Join the rEVEolution"</h4>
+	        			<p>with <a href="speakers/popcorn.html"  data-rel="dialog">Faith Popcorn</a> (BrainReserve)</p>
+	        			<p>Location: <a href="maps/ritzballroom.html" data-rel="dialog">Ritz Ballroom</a></p>
+        			</li>
+        			<li class="session">
+	        			<h3>7:30pm</h3>
+	        			<h4>Welcome Dinner</h4>
+	        			<p>Location: <a href="maps/ritzballroom.html" data-rel="dialog">Ritz Ballroom</a></p>
+        			</li>
+        			<li class="session">
+	        			<h3>8:00pm</h3>
+	        			<h4>Nine for IX film screening: An inside look at one of the nine documentaries inspired by Title IX, developed by ESPN Films and espnW</h4>
+	        			<p>with <a href="speakers/storm.html" data-rel="dialog">Hannah Storm</a> and <a href="speakers/swoopes.html" data-rel="dialog">Sheryl Swoopes</a></p>
+	        			<p>Location: <a href="maps/ritzballroom.html" data-rel="dialog">Ritz Ballroom</a></p>
+        			</li>
+        			<li class="session">
+	        			<h3>8:45pm</h3>
+	        			<h4>Fireside Cocktails</h4>
+	        			<p>Location: <a href="maps/turquesapool.html" data-rel="dialog">Turquesa Pool</a></p>
+        			</li>
+        			<li data-role="list-divider" id="daytwo">Day 2 - Tuesday, October 2</li>
+        			<li class="session">
+	        			<h3>7:00am - 8:00am</h3>
+	        			<h4>Sports activities fueled by Gatorade G Series:</h4> 
+	        			<p>Group Run with New York Road Runners (<a href="maps/mainlobby.html" data-rel="dialog">Outside Main Lobby</a>)</p> 
+	        			<p><a href="speakers/metzl.html" data-rel="dialog">Dr. Jordan Metzl</a> IronStrength Workout (<a href="maps/azuralawn.html" data-rel="dialog">Azura Lawn</a>)</p>
+	        			<p>Yoga with lululemon athletica (<a href="maps/turquesapool.html" data-rel="dialog">Turquesa Pool</a>)</p>
+        			</li>
+        			<li class="session">
+	        			<h3>8:30am</h3>
+	        			<h4>Breakfast</h4>
+	        			<p>Location: <a href="maps/brisalawn.html" data-rel="dialog">Brisa Lawn</a></p>
+        			</li>
+        			<!--<li class="session">
+	        			<h3>8:45am</h3>
+	        			<h4>"Better Energy vs. More Energy"</h4>
+	        			<p>with Ashley Koff, RD</p>
+	        			<p>Location: <a href="maps/brisalawn.html" data-rel="dialog">Brisa Lawn</a></p>
+        			</li>
+        			<li class="session">
+	        			<h3>9:10am - 9:20am</h3>
+	        			<h4>Break</h4>
+	        			<p>Location: <a href="maps/ritzballroom.html" data-rel="dialog">Ritz Ballroom</a></p>
+        			</li>-->
+        			<li class="session">
+	        			<h3>9:20am - 9:50am</h3>
+	        			<h4>"Ideas for the Next 40 Years: a Summary of Key Themes in our Knowledge about Women and Sports"</h4>
+	        			<p>with <a href="speakers/cookson.html"  data-rel="dialog">Emma Cookson</a>, Chairman, BBH North America</p>
+	        			<p>Location: <a href="maps/ritzballroom.html" data-rel="dialog">Ritz Ballroom</a></p>
+        			</li>
+        			<li class="session">
+	        			<h3>9:50am - 10:50am</h3>
+	        			<h4>"Immediate Challenges and Opportunities for Women in the Sports Marketplace"</h4> 
+	        			<p>with<a href="speakers/eddleman.html"  data-rel="dialog">Julie Eddleman</a>, <a href="speakers/lisko.html"  data-rel="dialog">John Lisko</a>, <a href="speakers/ackerman.html">Val Ackerman</a>, and <a href="speakers/fairchild.html"  data-rel="dialog">Andrea Fairchild</a> with <a href="speakers/storm.html" data-rel="dialog">Hannah Storm</a></p>
+	        			<p>Location: <a href="maps/ritzballroom.html" data-rel="dialog">Ritz Ballroom</a></p>
+        			</li>
+        			<li class="session">
+	        			<h3>11:00am - 12:00pm</h3>
+	        			<h4>W Power Talks</h4>
+	        			<p>10 minute focused talk + 10 minute Q&A</p>
+	        			<p><b>Room 1:</b> <a href="speakers/lapchick.html" data-rel="dialog">Dr. Richard Lapchick</a>: "Sports as a Bridge across Gender and Racial Divides", <a href="speakers/drysdale.html" data-rel="dialog">Ann Meyers Drysdale</a>: "Breaking Barriers in Women's Sports", <a href="speakers/friedman.html" data-rel="dialog">Dr. Henry Friedman</a>: "Engaging Female Athletes through Higher Education Opportunities", and host <a href="speakers/mcmanus.html" data-rel="dialog">Jane McManus</a></p>
+	        			<p><b>Room 2:</b> <a href="speakers/metzl.html" data-rel="dialog">Dr. Jordan Metzl</a>: "Taking Care of Your Athletic Body, The Athlete's Guide to Home Remedies and Healthy Body Maintenance", <a href="speakers/baird.html" data-rel="dialog">Lisa Baird</a>: "The Power of the Olympic Brand", <a href="speakers/nichols.html" data-rel="dialog">Alana Nichols</a>: "The Disabled Sport Movement and How it Compares to the Women's Sport Movement", and host <a href="speakers/mckendry.html" data-rel="dialog">Chris McKendry</a></p>
+	        			<p><b>Room 3:</b> <a href="speakers/stone-k.html" data-rel="dialog">Dr. Kevin Stone</a>: "BioKnee: Current and future treatments to keep you active", <a href="speakers/enquist.html" data-rel="dialog">Sue Enquist</a> (UCLA): "Competitive Greatness 24.7", <a href="speakers/mcpherson.html" data-rel="dialog">Donald McPherson</a>: "You Throw Like a Girl", and host <a href="speakers/hill.html" data-rel="dialog">Jemele Hill</a></p>
+	        			<p>Location: <a href="maps/tortolitaballroom.html" data-rel="dialog">Tortolita Ballroom</a></p>
+        			</li>
+        			<li class="session">
+	        			<h3>12:15pm</h3>
+	        			<h4>Lunch</h4>
+	        			<p>Location: <a href="maps/ritzballroom.html" data-rel="dialog">Ritz Ballroom</a></p>
+        			</li>
+        			<li class="session">
+	        			<h3>12:45pm - 1:30pm</h3>
+	        			<h4>"A Global Perspective on Women's Sports"</h4>
+	        			<p>with <a href="speakers/allaster.html" data-rel="dialog">Stacey Allaster</a>, <a href="speakers/wittenberg.html" data-rel="dialog">Mary Wittenberg</a>, <a href="speakers/brahmbhatt.html" data-rel="dialog">Rahul Brahmbhatt</a>, and <a href="speakers/kohestani.html" data-rel="dialog">Shamila Kohestani</a>, moderated by <a href="speakers/mckendry.html" data-rel="dialog">Chris McKendry</a></p>
+	        			<p>Location: <a href="maps/ritzballroom.html" data-rel="dialog">Ritz Ballroom</a></p>
+        			</li>
+        			<li class="session">
+	        			<h3>1:45pm - 3:15pm</h3>
+	        			<h4>Interactive work sessions:</h4>
+	        			<p>Tortolita Ballroom B: <b>"Current Perceptions of Women's Sports: Pushing Beyond the Boundaries"</b> with <a href="speakers/grau.html" data-rel="dialog">Josh Grau</a>, <a href="speakers/hovey.html" data-rel="dialog">Sue Hovey</a>, and <a href="speakers/waterson.html" data-rel="dialog">Sheree Waterson</a>, moderated by <a href="speakers/mckendry.html" data-rel="dialog">Chris McKendry</a></p>
+	        			<p>Tortolita Ballroom C: <b>"Building Great Role Models: Current Challenges + Opportunities"</b> with <a href="speakers/barker.html" data-rel="dialog">Molly Barker</a>, <a href="speakers/moline.html" data-rel="dialog">Peg Moline</a>, <a href="speakers/carpenter.html" data-rel="dialog">Donna Carpenter</a>, and <a href="speakers/mendoza.html" data-rel="dialog">Jessica Mendoza</a>, moderated by <a href="speakers/steele.html" data-rel="dialog">Sage Steele</a></p>
+	        			<p>Location: <a href="maps/tortolitaballroom.html" data-rel="dialog">Tortolita Ballroom</a></p>
+        			</li>
+        			<li class="session">
+	        			<h3>3:30pm - 6:00pm</h3>
+	        			<h4>Sports activities fueled by Gatorade G Series:</h4>
+	        			<p>Todd Durkin's SWEAT Challenge Hosted by UnderArmour! (<a href="maps/tortolitaballroom.html" data-rel="dialog">Tortolita Ballroom</a>)</p> 
+	        			<p>Yoga with lululemon athletica (<a href="maps/ritzplaza1.html" data-rel="dialog">Ritz Plaza 1</a>)</p>
+	        			<p>Hiking (<a href="maps/mainlobby.html" data-rel="dialog">Outside Main Lobby</a>)</p>
+        			</li>
+        			<!--<li class="session">
+	        			<h3>6:00pm - 6:30pm</h3>
+	        			<h4>Refresh / Shower Time</h4>
+        			</li>-->
+        			<li class="session">
+	        			<h3>6:30pm - 7:45pm</h3>
+	        			<h4>Cocktails</h4>
+	        			<p>Location: <a href="maps/brisalawn.html" data-rel="dialog">Brisa Lawn</a></p>
+        			</li>
+        			<li class="session">
+	        			<h3>6:45pm - 7:45pm</h3>
+	        			<h4>"The WNBA: a Story of Commitment, Passion, and Innovation"</h4>
+	        			<p>with <a href="speakers/silver.html" data-rel="dialog">Adam Silver</a> and <a href="speakers/skipper.html" data-rel="dialog">John Skipper</a>, hosted by <a href="speakers/storm.html" data-rel="dialog">Hannah Storm</a></p>
+	        			<p>Location: <a href="maps/brisalawn.html" data-rel="dialog">Brisa Lawn</a></p>
+        			</li>
+        			<li class="session">
+	        			<h3>7:45pm - 9:00pm</h3>
+	        			<h4>Title IX Dinner</h4>
+	        			<p>Location: <a href="maps/brisalawn.html" data-rel="dialog">Brisa Lawn</a></p>
+        			</li>
+        			<li class="session">
+	        			<h3>8:15pm - 9:00pm</h3>
+	        			<h4>"World-Class Athletes: the Ultimate Multi-Taskers"</h4>
+	        			<p>with <a href="speakers/reece.html" data-rel="dialog">Gabrielle Reece</a>, <a href="speakers/jeter.html" data-rel="dialog">Carmelita Jeter</a>, <a href="speakers/lilly.html" data-rel="dialog">Kristine Lilly</a>, and <a href="speakers/cash.html" data-rel="dialog">Swin Cash</a>, moderated by <a href="speakers/hill.html" data-rel="dialog">Jemele Hill</a></p>
+	        			<p>Location: <a href="maps/brisalawn.html" data-rel="dialog">Brisa Lawn</a></p>
+        			</li>
+        			<li class="session">
+	        			<h3>9:00pm</h3>
+	        			<h4>Cocktails</h4>
+	        			<p>Location: <a href="maps/brisalawn.html" data-rel="dailog">Brisa Lawn</a></p>
+        			</li>
+        			<li class="session">
+	        			<h3>9:15pm</h3>
+	        			<h4>espnW presents <em>"The Word"</em> LIVE</h4> 
+	        			<p>with <a href="speakers/foudy.html" data-rel="dialog">Julie Foudy</a>, <a href="speakers/spain.html" data-rel="dialog">Sarah Spain</a> and <a href="speakers/hill.html" data-rel="dialog">Jemele Hill</a></p>
+	        			<p>Location: <a href="maps/ritzballroom.html" data-rel="dialog">Ritz Ballroom</a></p>
+        			</li>
+        			<li class="session">
+        			<h3>10:00pm</h3>
+        			<h4>Acoustic performance by Terra Naomi</h4>
+        			<p>Location: <a href="maps/ritzballroom.html" data-rel="dialog">Ritz Ballroom</a></p>
+        			</li>
+        			<li data-role="list-divider" id="daythree">Day 3 - Wednesday, October 3</li>
+        			<li class="session">
+	        			<h3>6:30am - 7:30am</h3>
+	        			<h4>Sports activities fueled by Gatorade G Series:</h4>
+	        			<p>Group Run led by New York Road Runners (<a href="maps/mainlobby.html" data-rel="dialog">Outside Main Lobby</a>)</p>
+	        			<p>Yoga with lululemon athletica (<a href="maps/turquesapool.html" data-rel="dialog">Turquesa Pool</a>)</p>
+        			</li>
+        			<li class="session">
+	        			<h3>7:45am</h3>
+	        			<h4>Breakfast</h4>
+	        			<p>Location: <a href="maps/ritzballroom.html" data-rel="dialog">Ritz Ballroom</a></p>
+        			</li>
+        			<li class="session">
+	        			<h3>8:00am - 9:00am</h3>
+	        			<h4>"How Women are Using Social Media to Innovate"</h4>
+	        			<p>with <a href="speakers/martin.html" data-rel="dialog">Amy Jo Martin</a></p>
+	        			<p>Location: <a href="maps/ritzballroom.html" data-rel="dialog">Ritz Ballroom</a></p>
+        			</li>
+        			<li class="session">
+	        			<h3>9:00am - 11:15am</h3>
+	        			<h4>Sports activities fueled by Gatorade G Series:</h4>
+	        			<p>Todd Durkin's SWEAT Challenge Hosted by Under Armour! (Look for an espnW staff member with a sign in the <a href="maps/mainlobby.html" data-rel="dialog">lobby</a> to direct you to the shuttle bus to the Member's Lawn at Cayton's)<p>
+	        			<p>Yoga with lululemon athletica (<a href="maps/ritzplaza1.html" data-rel="dialog">Ritz Plaza 1</a>)</p>
+	        			<p>Hiking (<a href="maps/mainlobby.html" data-rel="dialog">Outside Main Lobby</a>)</p> 
+        			</li>
+        			<li class="session">
+	        			<h3>11:45am</h3>
+	        			<h4>Lunch</h4>
+	        			<p>Location: <a href="maps/ritzballroom.html" data-rel="dialog">Ritz Ballroom</a></p>
+        			</li>
+        			<li class="session">
+	        			<h3>12:00pm - 1:45pm</h3>
+	        			<h4>Closing Session</h4>
+	        			<h4>"Smart Power: The Future of Women and Sports is in our Hands"</h4>
+	        			<p>with Deputy Assistant Secretary <a href="speakers/satterfield.html" data-rel="dialog">Lee Satterfield</a></p> 
+	        			<h4>"The Future is Ours: Action Plan for Growth"</h4>
+	        			<p>with <a href="speakers/gentile.html" data-rel="dialog">Laura Gentile</a> and <a href="speakers/steele.html" data-rel="dialog">Sage Steele</a></p>
+	        			<h4>An Olympic Gold Session</h4>
+	        			<p>with <a href="speakers/walsh.html" data-rel="dialog">Kerri Walsh</a> with <a href="speakers/foudy.html" data-rel="dialog">Julie Foudy</a></p>
+	        			<h4>"Voices of the Future"</h4>
+	        			<p>with <a href="speakers/stone-l.html" data-rel="dialog">Latanna Stone</a>, <a href="speakers/long.html" data-rel="dialog">Jessica Long</a>, <a href="speakers/raisman.html" data-rel="dialog">Aly Raisman</a>, and <a href="speakers/stephens.html" data-rel="dialog">Sloane Stephens</a>, moderated by <a href="speakers/foudy.html" data-rel="dialog">Julie Foudy</a></p>
+	        			<p>Location: <a href="maps/ritzballroom.html" data-rel="dialog">Ritz Ballroom</a></p>
+        			</li>
+          		</ul>
+        	</div><!-- /.content -->	
+        </div><!-- /.wrapper -->
+
+	</div><!-- /#agenda-page -->
+</body>
+</html>

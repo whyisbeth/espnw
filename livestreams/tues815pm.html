@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>espnW Summit | Livestreams</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	
+	<!--Icons-->
+	<link rel="apple-touch-icon" href=" " />
+	<link rel="apple-touch-icon" sizes="72x72" href=" " />
+	<link rel="apple-touch-icon" sizes="114x114" href=" " />
+	<link rel="apple-touch-startup-image" href=" " />
+	
+	<!--Styles-->
+	<link rel="stylesheet" href="../styles/jquery.mobile.structure-1.1.0.min.css" />
+	<link rel="stylesheet" href="../styles/espnwsummit2.css" />
+	<link type="text/css" rel="stylesheet" media="screen and (max-device-width: 480px)" href="../styles/mobile.css" />
+	<link type="text/css" rel="stylesheet" media="screen and (min-device-width: 480px) and (max-device-width: 800px)" href="../styles/tablet.css" />
+	<link type="text/css" rel="stylesheet" media="screen and (min-device-width: 600px) and (max-device-width: 1024px)" href="../styles/tablet.css" />
+	<link type="text/css" rel="stylesheet" media="screen and (min-device-width: 768px) and (max-device-width: 1024px)" href="../styles/tablet.css" />
+	<link type="text/css" rel='stylesheet' media="screen and (min-device-width: 1024px)" href="../styles/styles.css" />
+	
+	<!--jQuery-->
+	<script src="../js/jquery-1.7.2.min.js"></script>
+	<script src="../js/jquery.mobile-1.1.0.min.js"></script>
+	<script src="../js/fitvids/jquery.fitvids.js"></script>
+	
+</head>
+<body>
+<script type="text/javascript">       
+   $(document).live("pageinit", function() {
+		$(".content").fitVids({ customSelector: "iframe[src^='http://cdn.livestream.com']"});    
+	});
+	$(window).bind('resize', function() { location.reload(); });
+</script>
+    <div data-role="page" id="sessions-page">
+        <div class="wrapper" data-role="content">
+        	<div data-role="header" data-position="fixed" id="page-header" data-theme="e">
+       			<a href="../livestreams.html" data-rel="back" data-role="button" data-icon="back" class="back-btn">Back</a>
+				<a href="#" onclick="location.reload(true)" data-role="button" data-icon="refresh" data-iconpos="notext" class="settings-btn"></a>
+       		</div><!-- /#page-header -->
+        	<div class="header">
+        		<img src="../img/header-new.png" />
+       		</div><!-- /.header -->
+       		<div class="mobile-header">
+       			<img src="../img/iphoneheader.png" />
+       		</div>
+        	<div class="content">
+        		<!--<p>4. World Class Athletes (Oct 2, 8:15p, Brisa Lawn)</p>-->
+        		<iframe src="http://cdn.livestream.com/hdembed/index.html?account=espnw&event=worldclassathletes&pre_event_poster=http://cdn.livestream.com/events/womensportssummit4/pre.png&post_event_poster=http://cdn.livestream.com/events/womensportssummit4/post.png" width="560" height="315" style="border:0;outline:0" frameborder="0" scrolling="no"></iframe>
+        	</div><!-- /.content -->	
+        </div><!-- /.wrapper -->
+	</div><!-- /#sessions-page -->
+</body>
+</html>

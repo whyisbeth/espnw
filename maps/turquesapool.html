@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ESPN W Summit | Map</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	
+	<!--Icons-->
+	<link rel="apple-touch-icon" href=" " />
+	<link rel="apple-touch-icon" sizes="72x72" href=" " />
+	<link rel="apple-touch-icon" sizes="114x114" href=" " />
+	<link rel="apple-touch-startup-image" href=" " />
+	
+	<!--Styles-->
+	<link rel="stylesheet" href="styles/jquery.mobile.structure-1.1.0.min.css" />
+	<link rel="stylesheet" href="styles/espnwsummit.css" />
+	<link type="text/css" rel="stylesheet" media="screen and (max-device-width: 480px)" href="styles/mobile.css" />
+	<link type="text/css" rel="stylesheet" media="screen and (min-device-width: 480px) and (max-device-width: 800px)" href="styles/tablet.css" />
+	<link type="text/css" rel="stylesheet" media="screen and (min-device-width: 600px) and (max-device-width: 1024px)" href="styles/tablet.css" />
+	<link type="text/css" rel="stylesheet" media="screen and (min-device-width: 768px) and (max-device-width: 1024px)" href="styles/tablet.css" />
+	<link type="text/css" rel='stylesheet' media="screen and (min-device-width: 1024px)" href="styles/styles.css" />
+	
+	<!--jQuery-->
+	<script src="js/jquery-1.7.2.min.js"></script>
+	<script src="js/jquery.mobile-1.1.0.min.js"></script>
+</head>
+</head> 
+<body style="width: 100%; height: 100%;"> 
+	<div data-role="dialog" class="map-page">
+		<div data-role="header" data-theme="a">
+			<h1> </h1>
+		</div>
+		<div data-role="content">
+		<div id="gallery">
+			<div id="thumbs">
+		        <img src="../img/maps/turquesaPool-thumb.png" />
+		        <img src="../img/maps/turq_pool_1-thumb.png" />
+		        <img src="../img/maps/turq_pool_2-thumb.png" />
+		        <img src="../img/maps/turq_pool_3-thumb.png" />
+			</div>
+			<div id="panel">
+				<img id="largeImage" src="../img/maps/turquesaPool-large.png" />
+			</div>			
+			<p>From the lobby, go down to onto the back patio. Take a left and go down the stairs. Turn left and follow the walkway to the pool, which will be on the right.</p>
+		</div>
+		<script>
+			$('#thumbs').delegate('img','click', function(){
+				$('#largeImage').attr('src',$(this).attr('src').replace('thumb','large'));
+			});
+		</script>
+	</div>
+</body>
+</html>

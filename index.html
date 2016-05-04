@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>espnW Summit | Home</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	
+	<!--Icons-->
+	<link rel="apple-touch-icon" href="http://www.appeproductions.com/espnwsummit/espnwdesktopicon2white.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="http://www.appeproductions.com/espnwsummit/espnwdesktopicon2white.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="http://www.appeproductions.com/espnwsummit/espnwdesktopicon2white.png" />
+	<link rel="apple-touch-startup-image" href="http://www.appeproductions.com/espnwsummit/espnwdesktopicon2white.png" />
+	
+	<!--Styles-->
+	<link rel="stylesheet" href="styles/jquery.mobile.structure-1.1.0.min.css" />
+	<link rel="stylesheet" href="styles/espnwsummit2.css" />
+	<link type="text/css" rel="stylesheet" media="screen and (max-device-width: 480px)" href="styles/mobile.css" />
+	<link type="text/css" rel="stylesheet" media="screen and (min-device-width: 480px) and (max-device-width: 800px)" href="styles/tablet.css" />
+	<link type="text/css" rel="stylesheet" media="screen and (min-device-width: 600px) and (max-device-width: 1024px)" href="styles/tablet.css" />
+	<link type="text/css" rel="stylesheet" media="screen and (min-device-width: 768px) and (max-device-width: 1024px)" href="styles/tablet.css" />
+	<link type="text/css" rel='stylesheet' media="screen and (min-device-width: 1024px)" href="styles/styles.css" />
+	
+	<!--jQuery-->
+	<script src="js/jquery-1.7.2.min.js"></script>
+	<script src="js/jquery.mobile-1.1.0.min.js"></script>
+	
+	<!-- add2home -->
+	<link rel="stylesheet" href="styles/add2home.css">
+	<script type="application/javascript" src="js/add2home.js"></script>
+	<script type="text/javascript">
+	
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-35173225-1']);
+	  _gaq.push(['_trackPageview']);
+	
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	
+	</script>
+	
+</head>
+<body>
+    <div data-role="page" id="home-page">
+<script type="text/javascript">
+$(window).click(handleClick);
+
+function handleClick(e) {
+    var target = $(e.target).closest('a');
+    if( target ) {
+        e.preventDefault();
+        window.location = target.attr('href');
+    }
+}
+
+$(window).error(function(){
+  return true;
+});
+</script>
+        <div class="wrapper" data-role="content">
+        	<div data-role="header" data-position="fixed" id="page-header" data-theme="e">
+       			<a href="index.html" data-role="button" data-icon="home" class="back-btn">Home</a>
+				<a href="#" onclick="location.reload(true)" data-role="button" data-icon="refresh" data-iconpos="notext" class="settings-btn"></a>
+       		</div><!-- /#page-header -->
+        	<div class="header">
+        		<img src="img/header-new.png" />
+       		</div><!-- /.header -->
+       		<div class="mobile-header">
+       			<img src="img/iphoneheader.png" />
+       		</div>
+        	<div class="content">
+        		<div class="nav-btn-grp ui-grid-b">
+					<div class="ui-block-a">
+						<a href="welcome.html" data-role="button" data-theme="e" class="nav-btn">
+							<img src="img/icons/home-red.png"/><br/>
+							Welcome & Contact
+						</a>
+					</div><!-- /.ui-block-a -->
+					<div class="ui-block-b">
+						<a href="agenda.html" data-role="button" data-theme="e" class="nav-btn">
+							<img src="img/icons/calendar-red.png"/><br/>
+							Agenda
+						</a>
+					</div><!-- /.ui-block-b -->
+					<div class="ui-block-c">
+						<a href="maps.html" data-role="button" data-theme="e" class="nav-btn">
+							<img src="img/icons/map-red.png"/><br/>
+							Maps
+						</a>
+					</div><!-- /.ui-block-c -->
+					<div class="ui-block-a">
+						<a href="livestreams.html" data-role="button" data-theme="e" class="nav-btn" data-ajax="false" id="livestreams-link">
+							<img src="img/icons/livesession-red.png"/><br/>
+							Watch Livestreams
+						</a>
+					</div><!-- /.ui-block-a -->
+					<div class="ui-block-b">
+						<a href="feed.html" data-role="button" data-theme="e" class="nav-btn" data-ajax="false">
+							<img src="img/icons/twitter-red.png"/><br/>
+							#espnWSummit
+						</a>
+					</div><!-- /.ui-block-b -->
+					<div class="ui-block-c">
+						<a href="gallery.html" data-role="button" data-theme="e" class="nav-btn">
+							<img src="img/icons/pictures-red.png"/><br/>
+							Summit Photos
+						</a>
+					</div><!-- /.ui-block-c -->
+					<div class="ui-block-a">
+						<a href="speakers.html" data-role="button" data-theme="e" class="nav-btn">
+							<img src="img/icons/speakers-red.png"/><br/>
+							Attendee Bios
+						</a>
+					</div><!-- /.ui-block-a -->
+					<div class="ui-block-b">
+						<a href="partners.html" data-role="button" data-theme="e" class="nav-btn">
+							<img src="img/icons/partners-red.png"/><br/>
+							espnW Partners
+						</a>
+					</div><!-- /.ui-block-b -->
+					<div class="ui-block-c">
+						<a href="feedback.php" data-role="button" data-theme="e" class="nav-btn">
+							<img src="img/icons/questions-red.png"/><br/>
+							Feedback
+						</a>
+					</div><!-- /.ui-block-c -->
+        		</div><!-- /.nav-btn-grp -->
+        		<ul data-role="listview" data-theme="e" class="nav-btn-grp-m">
+        			<li>
+        				<a href="welcome.html">
+        					<img src="img/icons/home-red.png"/>
+        					<h2>Welcome & Contact</h2>
+        				</a>
+        			</li>
+        			<li>
+        				<a href="agenda.html">
+        					<img src="img/icons/calendar-red.png"/>
+        					<h2>Agenda</h2>
+        				</a>
+        			</li>
+        			<li>
+        				<a href="maps.html">
+        					<img src="img/icons/map-red.png"/>
+        					<h2>Maps</h2>
+        				</a>
+        			</li>
+        			<li>
+        				<a href="livestreams.html" data-ajax="false"><!-- .-->
+        					<img src="img/icons/livesession-red.png"/>
+        					<h2>Watch Livestreams</h2>
+        				</a>
+        			</li>
+        			<li>
+        				<a href="feed.html" data-ajax="false"><!-- .-->
+	        				<img src="img/icons/twitter-red.png" />
+	        				<h2>#espnWSummit</h2>
+	        			</a>
+	        		</li>
+        			<li>
+        				<a href="gallery.html">
+        					<img src="img/icons/pictures-red.png"/>
+        					<h2>Summit Photos</h2>
+        				</a>
+        			</li>
+        			<li>
+        				<a href="speakers.html">
+        					<img src="img/icons/speakers-red.png"/>
+        					<h2>Attendee Bios</h2>
+        				</a>
+        			</li>
+        			<li>
+        				<a href="partners.html">
+        					<img src="img/icons/partners-red.png"/>
+        					<h2>espnW Partners</h2>
+        				</a>
+        			</li>
+        			<li>
+        				<a href="feedback.php">
+        					<img src="img/icons/questions-red.png"/>
+        					<h2>Feedback</h2>
+        				</a>
+        			</li>
+        		</ul>
+        	</div><!-- /.content -->	
+        </div><!-- /.wrapper -->
+
+	</div><!-- /#login-page -->
+</body>
+</html>

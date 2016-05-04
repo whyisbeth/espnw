@@ -1,0 +1,19 @@
+/* humanstxt.org */
+
+
+/* AUTHOR */
+  AppE Productions
+  Elisabeth Goebel, Interactive Producer
+  Twitter: @skitzabeth
+  Location: Minneapolis, MN
+
+/* ATTRIBUTIONS */
+  thenounproject.com
+  The Noun Project (Map Icon, Profile Icon, Home Icon, Picture Icons)
+  Rémy Médard from The Noun Project (User Icons)
+  Jake Nelsen from The Noun Project (Handshake Icon)
+
+/* SITE */
+  Standards: HTML5, CSS3
+  Components: jQuery Mobile, FitVids.js, AddToHome.js
+  Software: Coda 2 by Panic, Adobe CS6
